@@ -1,0 +1,57 @@
+{
+  "name": "landrop-v2-electron-reconstructed",
+  "version": "2.7.2-reconstructed.0",
+  "description": "Readable reconstruction of the shipped LANDrop 2.7.2 Electron application",
+  "private": true,
+  "type": "module",
+  "main": "./out/bootstrap.mjs",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify:dependencies": "node scripts/verify-dependencies.mjs",
+    "stage": "node scripts/stage-runtime.mjs",
+    "test:runtime": "node scripts/verify-runtime.mjs",
+    "test:offline": "node scripts/smoke.mjs",
+    "test:startup": "node --experimental-vm-modules --test tests/startup-regression.test.cjs"
+  },
+  "dependencies": {
+    "@ca9io/electron-webrtc-relay": "0.2.0",
+    "@electron-toolkit/preload": "3.0.1",
+    "@electron-toolkit/utils": "3.0.0",
+    "@emotion/styled": "11.13.0",
+    "@mui/icons-material": "6.1.2",
+    "@radix-ui/react-context-menu": "2.2.2",
+    "@radix-ui/react-dialog": "1.1.2",
+    "@radix-ui/react-icons": "1.3.0",
+    "@radix-ui/react-progress": "1.1.0",
+    "@radix-ui/react-select": "2.1.2",
+    "@radix-ui/react-slot": "1.1.0",
+    "@radix-ui/react-switch": "1.1.1",
+    "@radix-ui/react-tabs": "1.1.1",
+    "@radix-ui/react-toast": "1.2.2",
+    "ajv": "8.17.1",
+    "class-variance-authority": "0.7.0",
+    "clsx": "2.0.0",
+    "electron-store": "10.0.0",
+    "electron-updater": "6.3.9",
+    "i18next": "23.15.2",
+    "i18next-browser-languagedetector": "8.0.0",
+    "i18next-http-backend": "2.6.2",
+    "libsodium-wrappers": "0.7.15",
+    "lucide-react": "0.446.0",
+    "react-i18next": "15.0.2",
+    "secp256k1": "5.0.0",
+    "semver": "7.6.3",
+    "tailwind-merge": "2.5.3",
+    "tailwindcss-animate": "1.0.7",
+    "ws": "8.18.0"
+  },
+  "reconstruction": {
+    "originalVersion": "2.7.2",
+    "electronVersion": "31.6.0",
+    "dependencySource": "Verified local shipped artifacts; npm install is not a reproducible substitute.",
+    "originalBuildConfigurationRecovered": false
+  }
+}
